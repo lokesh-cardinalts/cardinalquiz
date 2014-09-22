@@ -1,0 +1,28 @@
+<h1>My Quizzes</h1>
+<div class="pull-right"><a href="#/quiz/create" role="button" class="btn btn-success">Create Your Quiz</a></div>
+<table class="table table-striped table-collapsed table-bordered" data-ng-if="myQuizzes.length > 0">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Quiz Name</th>
+      <th>Number of Questions</th>
+      <th>Assigned To</th>
+      <th>Created On</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="quiz in myQuizzes">
+      <td>{{$index + 1}}</td>
+      <td>{{quiz.quiz_name}}</td>
+      <td>{{quiz.num_questions}}</td>
+      <td>{{quiz.assigned_to.length}}</td>
+      <td>{{quiz.create_date | date:'medium'}}</td>
+      <td><a href="#/quiz/{{quiz.quiz_id}}/questions">View Questions</a></td>
+      <td><a href="#/quiz/{{quiz.quiz_id}}/assign">Assign</a></td>
+      <td>View Results</td>
+    </tr>
+  </tbody>
+</table>
+
+

@@ -1,0 +1,87 @@
+{
+  "status" : "success",
+  "quiz_details" : {
+    "quiz_id":1022,
+    "quiz_name":"Quiz 201409",
+    "quiz_description":"Second Quiz. Second Quiz. Second Quiz. Second Quiz. ",
+    "create_date":"2014-05-25 11:00:00",
+    "num_questions":5,
+    "questions": [
+          {
+              "question_id": 1,
+              "question_title": "Who is the PM of India ?",
+              "question_type": "Single Choice",
+              "points": 2,
+              "answerOptions": [
+                  {
+                      "answer_id": 101,
+                      "answer_text": "Rahul Gandhi"
+                  },
+                  {
+                      "answer_id": 102,
+                      "answer_text": "Narendra Modi"
+                  },
+                  {
+                      "answer_id": 103,
+                      "answer_text": "Akhilesh Yadav"
+                  },
+                  {
+                      "answer_id": 104,
+                      "answer_text": "Mayawati"
+                  }
+              ]
+          },
+          {
+              "question_id": 2,
+              "question_title": "Who will play the role of Sita in Ramlila ?",
+              "question_type": "Single Choice",
+              "points": 5,
+              "answerOptions": [
+                  {
+                      "answer_id": 115,
+                      "answer_text": "Rahul Gandhi"
+                  },
+                  {
+                      "answer_id": 116,
+                      "answer_text": "Shahrukh Khan"
+                  },
+                  {
+                      "answer_id": 117,
+                      "answer_text": "Abhishek Bachchan"
+                  },
+                  {
+                      "answer_id": 118,
+                      "answer_text": "Kapil Sharma"
+                  }
+              ]
+          },
+          {
+              "question_id": 3,
+              "question_title": "What are the nick names of Rahul Gandhi ?",
+              "question_type": "Multiple Choice",
+              "points": 5,
+              "answerOptions": [
+                  {
+                      "answer_id": 125,
+                      "answer_text": "Pappu",
+                      "answer_points": 2
+                  },
+                  {
+                      "answer_id": 126,
+                      "answer_text": "Namo"
+                  },
+                  {
+                      "answer_id": 127,
+                      "answer_text": "Yuvraj",
+                      "answer_points": 3
+                  },
+                  {
+                      "answer_id": 118,
+                      "answer_text": "Big B"
+                  }
+              ]
+          }
+      ],
+      "assigned_to":[]
+  }
+}

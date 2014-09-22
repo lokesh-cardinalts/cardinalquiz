@@ -1,0 +1,15 @@
+<div class="bg-info">
+  <h1>{{quizDetails.quiz_name}}</h1>
+
+  <h2>Questions ({{quizDetails.questions.length}}) :</h2>
+
+  <dl>
+    <dt data-ng-repeat-start="question in quizDetails.questions">{{question.question_title}} <span class="label label-primary">{{question.question_type}}</span></dt>
+    <dd data-ng-repeat-end>
+      <ul>
+        <li data-ng-repeat="answer in question.answerOptions">{{answer.answer_text}}</li>
+      </ul>
+    </dd>
+  </dl>
+
+</div>

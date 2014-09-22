@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="cardinalQuizApp" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Cardinal Quiz">
+    <meta name="twitter:title" content="Cardinal Quiz">
+    <meta name="twitter:description" content="Create and Share Quizzes with your friends.">
+    <meta name="twitter:creator" content="@lokeshtulsani">
+    <meta name="twitter:image:src" content="https://cardinalquiz.cardinalts.com">
+    <meta property="og:title" content="Cardinal Quiz Application" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://cardinalquiz.cardinalts.com" />
+    <meta property="og:image" content="http://cardinalquiz.cardinalts.com" />
+    <meta property="og:description" content="Create and Share Quizzes with your friends.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="assets/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/cquiz.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    
+    <script type="text/javascript" src="src/app/app.js"></script>
+    <script type="text/javascript" src="src/app/home/home.js"></script>
+    <script type="text/javascript" src="src/app/dashboard/dashboard.js"></script>
+    <script type="text/javascript" src="src/common/config.js"></script>
+    <script type="text/javascript" src="src/common/services.js"></script>
+    <script type="text/javascript" src="src/common/directives.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container" ui-view="header"></div>
+    </header>
+
+    <div class="container" ui-view="main"></div>
+
+    
+  </body>
+</html>

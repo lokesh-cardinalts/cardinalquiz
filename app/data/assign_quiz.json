@@ -1,0 +1,16 @@
+{
+  "status"      : "success",
+  "quiz_id"     : "1001",
+  "assigned_to" : [
+                    {
+                      "fb_user_id":"1000003",
+                      "fb_user_name":"Akhilesh",
+                      "assigned_on":"2014-09-11 11:00:30"
+                     },
+                     {
+                       "fb_user_id":"1000002",
+                       "fb_user_name":"Lokesh",
+                       "assigned_on":"2014-09-11 11:00:59"
+                      }
+                    ]
+}

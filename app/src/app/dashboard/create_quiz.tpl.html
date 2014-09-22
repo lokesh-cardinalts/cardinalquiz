@@ -1,0 +1,48 @@
+<div id="quizFormContainer" class="container">
+  <form role="form">
+    <div class="form-group">
+      <label for="quizName">Quiz Title</label>
+      <input type="text" data-ng-model="quiz.quiz_name" data-ng-disabled="disableQuizTextBox" name="quiz_name" class="form-control" id="quizName" placeholder="Enter Quiz Title">
+    </div>
+    <button class="btn btn-success btn-lg" data-ng-hide="platformQuestion.length > 0" data-ng-click="getQuestionsForQuiz()">Add Questions <span class="glyphicon glyphicon-chevron-right"></span></button>
+  </form>
+</div>
+
+<div id="quiz_questions" data-ng-if="platformQuestion.length > 0" class="container well">
+  <div class="pull-right col-lg-4">
+    <div class="panel panel-success" data-ng-if="quiz.selected_questions.length > 0">
+      <div class="panel-heading">Selected Questions : <span class="label label-danger pull-right">{{quiz.selected_questions.length}}</span></div>
+      <div class="panel-body">
+        <ol>
+          <li data-ng-repeat="selectedQuestion in quiz.selected_questions">{{selectedQuestion.question_title}}</li>
+        </ol>
+      </div>
+      <button type="submit" class="btn btn-success" data-ng-click="createQuiz()">Create Your Quiz</button>
+    </div>
+  </div>
+  <div class="col-lg-8">
+    <div class="row well">
+      <form class='form-inline'>
+        Search : <input type="text" data-ng-model="searchQuestion.$">
+      </form>
+    </div>
+    
+    <dl>
+      <dt data-ng-repeat-start="question in platformQuestion | filter:searchQuestion:strict">
+
+      <input 
+        type="checkbox" 
+        data-model="question.selected"
+        data-ng-click="question.selected=!question.selected;"
+        name="question_id[]">
+      {{$index +1}}) {{question.question_title}} <span class="label label-primary">{{question.question_type}}</span>
+      </dt>
+      <dd data-ng-repeat-end>
+        <ul>
+          <li data-ng-repeat="answer in question.answerOptions">{{answer.answer_text}}</li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+</div>
+

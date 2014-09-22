@@ -1,0 +1,17 @@
+[
+  {
+    "fb_user_id"          : "1000002",
+    "fb_user_name"        : "Lokesh Tulsani",
+    "imageURL"    : "http://images.clipartpanda.com/friend-clip-art-royalty-free-friends-clipart-illustration-215658.jpg"
+  },
+  {
+    "fb_user_id"          : "1000001",
+    "fb_user_name"        : "Anuj Tiwari",
+    "imageURL"    : "http://vector-magz.com/wp-content/uploads/2013/08/friendship-clipart1.jpg"
+  },
+  {
+    "fb_user_id"          : "1000003",
+    "fb_user_name"        : "Akhilesh",
+    "imageURL"    : "http://images.clipartpanda.com/ransom-clipart-friends-clip-art.jpg"
+  }
+]
